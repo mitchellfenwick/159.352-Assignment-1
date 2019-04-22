@@ -1,56 +1,66 @@
+import pycurl
+import certifi
 from socket import *
-import _thread
+from io import BytesIO
+import xml.etree.ElementTree as ET
 
+# Listening port for the server
+serverPort = 8082
+
+# Create the server socket object
 serverSocket = socket(AF_INET, SOCK_STREAM)
 
-serverPort = 8080
+# Bind the server socket to the port
+serverSocket.bind(('', serverPort))
 
-serverSocket.bind(("", serverPort))
+# Start listening for new connections
+serverSocket.listen(1)
 
-serverSocket.listen(5)
-print('The server is running')
+print('The server is ready to receive messages')
 
-
-# Server should be up and running and listening to the incoming connections
-
-
-def process(connectionSocket):
-    try:
-        # Receives the request message from the client
-        message = connectionSocket.recv(1024)
-        # Extract the path of the requested object from the message
-        print(message)
-        filename = message.decode(encoding='UTF-8').split()[1]
-        print ('File name is: ' + filename)
-        # Because the extracted path of the HTTP request includes
-        # a character '/', we read the path from the second character
-        f = open(filename[1:])
-        # Store the entire content of the requested file in a temporary buffer
-        outputdata = f.read()
-        # Send the HTTP response header line to the connection socket
-        response = "HTTP/1.1 200 OK\r\n\r\n"
-
-        # Send the content of the requested file to the connection socket
-        for i in range(0, len(outputdata)):
-            response += outputdata[i]
-        response += "\r\n";
-
-        # Close the client connection socket
-        connectionSocket.send(response.encode())
-        connectionSocket.close()
-
-    except (IOError, IndexError):  # Send HTTP response message for file not found
-        response = "HTTP/1.1 404 Not Found\r\n\r\n"
-        response += "<html><head></head><body><h1>404 Not Found</h1></body></html>\r\n"
-        connectionSocket.send(response.encode())
-        connectionSocket.close()
-
-while True:
-    # Set up a new connection from the client
+while 1:
+    # Accept a connection from a client
     connectionSocket, addr = serverSocket.accept()
-    # Clients timeout after 60 seconds of inactivity and must reconnect.
-    connectionSocket.settimeout(60)
-    # start new thread to handle incoming request
-    _thread.start_new_thread(process, (connectionSocket,))
 
-serverSocket.close()
+    ## Retrieve the message sent by the client
+    request = connectionSocket.recv(1024).decode('UTF-8')
+
+    # Extract the requested resource from the path
+    resource = request.split()[1].split("/")[1]
+
+    # This is buffer to hold response from google map API server
+    response_buffer = BytesIO()
+
+    curl = pycurl.Curl()
+
+    # Set the curl options which indentify the Google API server, the parameters to be passed to the API,
+    # and buffer to hold the response
+    curl.setopt(pycurl.CAINFO, certifi.where())
+    curl.setopt(curl.URL,
+                'https://maps.googleapis.com/maps/api/geocode/xml?key=AIzaSyAU0y5AGm-PdLrNhQAnARHFGj1fTuSLQ3s&address="' + resource + '"')
+    curl.setopt(curl.WRITEFUNCTION, response_buffer.write)
+
+    curl.perform()
+    curl.close()
+
+    response_value = response_buffer.getvalue().decode('UTF-8')
+    if len(response_value) > 107:
+        with open('responsexml.xml', 'wb') as file:
+            file.write(response_value.encode('UTF-8'))
+        tree = ET.parse('responsexml.xml')
+        root = tree.getroot()
+        location = root.find('./result/formatted_address')
+        latitude = root.find('./result/geometry/location/lat')
+        longitude = root.find('./result/geometry/location/lng')
+        response_value = location.text + ' is located at Latitude ' + latitude.text + ' and Longitude ' + longitude.text
+    else:
+        response_value = 'No place found'
+
+    # create HTTP response
+    response = "HTTP /1.1 200 OK\n\n" + response_value
+
+    # send HTTP response back to the client
+    connectionSocket.send(response.encode())
+
+    # Close the connection
+    connectionSocket.close()
