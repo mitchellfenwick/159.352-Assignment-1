@@ -1,9 +1,6 @@
-import pycurl
+import requests
 import certifi
 from socket import *
-from io import BytesIO
-import xml.etree.ElementTree as ET
-
 # Listening port for the server
 serverPort = 8082
 
