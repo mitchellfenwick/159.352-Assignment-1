@@ -1,6 +1,8 @@
 import requests
 import certifi
 from socket import *
+import xml.etree.ElementTree as ET
+
 # Listening port for the server
 serverPort = 8082
 
@@ -25,22 +27,9 @@ while 1:
     # Extract the requested resource from the path
     resource = request.split()[1].split("/")[1]
 
-    # This is buffer to hold response from google map API server
-    response_buffer = BytesIO()
-
-    curl = pycurl.Curl()
-
-    # Set the curl options which indentify the Google API server, the parameters to be passed to the API,
-    # and buffer to hold the response
-    curl.setopt(pycurl.CAINFO, certifi.where())
-    curl.setopt(curl.URL,
-                'https://maps.googleapis.com/maps/api/geocode/xml?key=AIzaSyAU0y5AGm-PdLrNhQAnARHFGj1fTuSLQ3s&address="' + resource + '"')
-    curl.setopt(curl.WRITEFUNCTION, response_buffer.write)
-
-    curl.perform()
-    curl.close()
-
-    response_value = response_buffer.getvalue().decode('UTF-8')
+    res = requests.get('https://maps.googleapis.com/maps/api/geocode/xml?key=AIzaSyAU0y5AGm-PdLrNhQAnARHFGj1fTuSLQ3s&address="' + resource + '"')
+    print(res.text)
+    response_value = res
     if len(response_value) > 107:
         with open('responsexml.xml', 'wb') as file:
             file.write(response_value.encode('UTF-8'))
