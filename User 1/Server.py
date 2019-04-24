@@ -1,7 +1,7 @@
 import requests
 import certifi
+import json
 from socket import *
-import xml.etree.ElementTree as ET
 
 # Listening port for the server
 serverPort = 8082
@@ -36,7 +36,11 @@ while 1:
         headers = "HTTP/1.1 200 OK\r\n Content-Type: text/html\r\n\r\n"
         if method == "POST":
             params = params.split("=")
-            print(params)
+            filename = params[0] + ".json"
+            with open(filename, 'r') as f:
+                data = json.load(f)
+                
+
 
 
     # create HTTP response

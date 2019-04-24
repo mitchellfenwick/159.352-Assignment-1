@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ab81f5f-2a52-48ac-afd4-0b72c2bab34f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/User 1/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/Server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User 1/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User 1/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User 1/user.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User 1/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -128,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556083176087</updated>
-      <workItem from="1556083178260" duration="4250000" />
+      <workItem from="1556083178260" duration="5137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4250000" />
+    <option name="totallyTimeSpent" value="5137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="687" y="54" width="1400" height="1000" extended-state="0" />
@@ -166,13 +163,13 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Assignment_1$Server.coverage" NAME="Server Coverage Results" MODIFIED="1556090132084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User 1" />
+    <SUITE FILE_PATH="coverage/Assignment_1$Server.coverage" NAME="Server Coverage Results" MODIFIED="1556092648126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User 1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/User 1/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        <state relative-caret-position="289">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
