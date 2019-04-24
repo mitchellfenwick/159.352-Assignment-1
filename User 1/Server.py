@@ -25,28 +25,27 @@ while 1:
     request = connectionSocket.recv(1024).decode('UTF-8')
 
     # Extract the requested resource from the path
+    method = request.split()[0]
     resource = request.split()[1].split("/")[1]
+    params = request.split()[-1]
 
-    res = requests.get('https://maps.googleapis.com/maps/api/geocode/xml?key=AIzaSyAU0y5AGm-PdLrNhQAnARHFGj1fTuSLQ3s&address="' + resource + '"')
-    print(res.text)
-    response_value = res
-    if len(response_value) > 107:
-        with open('responsexml.xml', 'wb') as file:
-            file.write(response_value.encode('UTF-8'))
-        tree = ET.parse('responsexml.xml')
-        root = tree.getroot()
-        location = root.find('./result/formatted_address')
-        latitude = root.find('./result/geometry/location/lat')
-        longitude = root.find('./result/geometry/location/lng')
-        response_value = location.text + ' is located at Latitude ' + latitude.text + ' and Longitude ' + longitude.text
-    else:
-        response_value = 'No place found'
+    if resource.endswith(".html"):
+        f = open(resource, "rb")
+        content = f.read()
+        f.close()
+        headers = "HTTP/1.1 200 OK\r\n Content-Type: text/html\r\n\r\n"
+        if method == "POST":
+            params = params.split("=")
+            print(params)
+
 
     # create HTTP response
-    response = "HTTP /1.1 200 OK\n\n" + response_value
+    #response = "HTTP /1.1 200 OK\n\n" + response_value
 
     # send HTTP response back to the client
-    connectionSocket.send(response.encode())
+    final_response = headers.encode()
+    final_response += content
+    connectionSocket.send(final_response)
 
     # Close the connection
     connectionSocket.close()
