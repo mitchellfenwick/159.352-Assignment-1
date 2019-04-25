@@ -1,6 +1,7 @@
 import requests
 import certifi
 import json
+import datetime
 from socket import *
 
 # Listening port for the server
@@ -24,10 +25,11 @@ while 1:
     ## Retrieve the message sent by the client
     request = connectionSocket.recv(1024).decode('UTF-8')
 
+    if request != "":
     # Extract the requested resource from the path
-    method = request.split()[0]
-    resource = request.split()[1].split("/")[1]
-    params = request.split()[-1]
+        method = request.split()[0]
+        resource = request.split()[1].split("/")[1]
+        params = request.split()[-1]
 
     if resource.endswith(".html"):
         f = open(resource, "rb")
@@ -39,7 +41,14 @@ while 1:
             filename = params[0] + ".json"
             with open(filename, 'r') as f:
                 data = json.load(f)
-                
+                timestamp = str(datetime.datetime.now().isoformat(' ', 'seconds'))
+                text = params[1].replace("+", " ")
+                likes = []
+                status = {'timestamp': timestamp, 'text': text, 'likes': likes}
+                data[params[0]].append(status)
+            with open(filename, 'w') as f:
+                json.dump(data, f, indent=4)
+
 
 
 
