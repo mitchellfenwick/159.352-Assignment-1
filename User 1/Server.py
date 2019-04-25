@@ -24,7 +24,7 @@ while 1:
 
     ## Retrieve the message sent by the client
     request = connectionSocket.recv(1024).decode('UTF-8')
-
+    print(request)
     if request != "":
     # Extract the requested resource from the path
         method = request.split()[0]
@@ -48,6 +48,15 @@ while 1:
                 data[params[0]].append(status)
             with open(filename, 'w') as f:
                 json.dump(data, f, indent=4)
+    elif resource.endswith(('png', 'jpg')):
+        f = open(resource, "rb")
+        content = f.read()
+        f.close()
+        contentType = "image/" + resource.split('.')[-1]
+        "HTTP/1.1 200 OK\r\n Content-Type:"+contentType+"\r\n\r\n"
+
+
+
 
 
 
