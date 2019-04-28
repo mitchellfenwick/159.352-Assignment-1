@@ -115,10 +115,32 @@
                 <h3 class="name">Olivia</h3>
                 <img src="CacheImages/profile0.jpg" alt="" id="img">
             </div>
+            <div>
+                <h4 id="status">%3A%29</h4>
+                <p id="details">Time: 2019-04-29 04:50:57 | Likes: 0</p>
+                <form method = "POST" action="/friends.html">
+                    <input type="hidden" name="StatusIndex" value="-1" />
+                    <input type="hidden" name="IPAddr" value="127.0.0.1" />
+                    <input type="hidden" name="ID" value="0" />
+                    <button type="submit" id="likebutton">Like</button>     
+                </form>    
+            </div>
         </div>
-        <div>
-            <h3 class="name">Holly</h3>
-            <h3 class="offline">Offline</h3>
+        <div id="card">
+            <div>
+                <h3 class="name">Holly</h3>
+                <img src="CacheImages/profile1.jpg" alt="" id="img">
+            </div>
+            <div>
+                <h4 id="status">Feeling sick :( don't want to go to work</h4>
+                <p id="details">Time: 2019-04-27 18:22:37 | Likes: 2</p>
+                <form method = "POST" action="/friends.html">
+                    <input type="hidden" name="StatusIndex" value="-1" />
+                    <input type="hidden" name="IPAddr" value="127.0.0.1" />
+                    <input type="hidden" name="ID" value="1" />
+                    <button type="submit" id="likebutton" disabled>Like</button>     
+                </form>    
+            </div>
         </div>
     </div>
 </body>

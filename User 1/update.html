@@ -109,7 +109,7 @@
             <img src="/profile.jpg" alt="">
         </div>
         <form action="/update.html" method="POST" id="form">
-            <input type="textarea" id="status" name="Status" placeholder="What's on your mind?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What\'s on your mind?'" required>
+            <input type="textarea" id="status" name="Status" placeholder="What's on your mind?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What\'s on your mind?'" pattern="[a-zA-Z0-9]{1,}" required>
             <br>
             <button type="submit">Post</button>
             <button type="reset">Clear</button>

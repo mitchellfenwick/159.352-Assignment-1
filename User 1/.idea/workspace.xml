@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bdca95b-4518-4282-9423-f335ea449cdb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/User 1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/friends.json" beforeDir="false" afterPath="$PROJECT_DIR$/friends.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github_cache.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/github_cache.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 2/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../User 2/Server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../User 2/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/../User 2/friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 2/friends.json" beforeDir="false" afterPath="$PROJECT_DIR$/../User 2/friends.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 2/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../User 2/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../User 2/github_cache.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../User 2/github_cache.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../User 2/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/../User 2/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 2/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../User 2/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 3/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../User 3/Server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../User 3/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/../User 3/friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 3/friends.json" beforeDir="false" afterPath="$PROJECT_DIR$/../User 3/friends.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 3/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../User 3/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../User 3/github_cache.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../User 3/github_cache.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../User 3/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/../User 3/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User 3/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../User 3/update.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +23,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-482">
+            <state relative-caret-position="-176">
               <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
@@ -75,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -177,12 +162,12 @@
       <workItem from="1556457279020" duration="23000" />
       <workItem from="1556457496955" duration="2221000" />
       <workItem from="1556460328334" duration="320000" />
-      <workItem from="1556464290326" duration="4705000" />
+      <workItem from="1556464290326" duration="5238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41234000" />
+    <option name="totallyTimeSpent" value="41767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -215,7 +200,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/User_1$Server.coverage" NAME="Server Coverage Results" MODIFIED="1556469284534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/User_1$Server.coverage" NAME="Server Coverage Results" MODIFIED="1556470563508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../User 2/Server.py">
@@ -227,7 +212,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
+        <state relative-caret-position="-176">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
             <element signature="e#1#16#0" expanded="true" />
