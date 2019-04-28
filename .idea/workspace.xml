@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ab81f5f-2a52-48ac-afd4-0b72c2bab34f" name="Default Changelist" comment="" />
+    <list default="true" id="3ab81f5f-2a52-48ac-afd4-0b72c2bab34f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 1/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 1/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/friends.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 1/friends.json" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/friends.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 1/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 1/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 1/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/User 1/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 2/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/User 2/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 2/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/User 2/friends.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 2/friends.json" beforeDir="false" afterPath="$PROJECT_DIR$/User 2/friends.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 2/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/User 2/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 2/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/User 2/status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 2/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/User 2/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 3/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/User 3/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 3/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/User 3/friends.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 3/friends.json" beforeDir="false" afterPath="$PROJECT_DIR$/User 3/friends.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 3/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/User 3/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 3/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/User 3/status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User 3/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/User 3/update.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +34,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User 1/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+            <state relative-caret-position="208">
+              <caret line="149" column="51" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#1#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -24,28 +45,36 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>img</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/User 1/temp.py" />
         <option value="$PROJECT_DIR$/User 1/Server.py" />
+        <option value="$PROJECT_DIR$/User 2/Server.py" />
+        <option value="$PROJECT_DIR$/User 3/Server.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="266" />
+    <option name="y" value="85" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -62,6 +91,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -84,7 +114,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Server">
+    <configuration name="Server (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Assignment-1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User 2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/User 2/Server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Assignment-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,9 +159,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Assignment-1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User 1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/User 1/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Server" />
+        <item itemvalue="Python.temp" />
+        <item itemvalue="Python.Server (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -127,21 +203,23 @@
       <workItem from="1556153647600" duration="4649000" />
       <workItem from="1556163305919" duration="135000" />
       <workItem from="1556174089671" duration="4782000" />
+      <workItem from="1556257422422" duration="28808000" />
+      <workItem from="1556416737184" duration="9829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14930000" />
+    <option name="totallyTimeSpent" value="53567000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="266" y="85" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18656716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26791045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3434453" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3656286" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -163,15 +241,32 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Assignment_1$Server.coverage" NAME="Server Coverage Results" MODIFIED="1556185643113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User 1" />
+    <SUITE FILE_PATH="coverage/Assignment_1$Server__1_.coverage" NAME="Server (1) Coverage Results" MODIFIED="1556257576764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User 2" />
+    <SUITE FILE_PATH="coverage/Assignment_1$temp.coverage" NAME="temp Coverage Results" MODIFIED="1556331217362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User 1" />
+    <SUITE FILE_PATH="coverage/Assignment_1$Server.coverage" NAME="Server Coverage Results" MODIFIED="1556432212667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/User 1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/User 1/temp.py" />
+    <entry file="file://$PROJECT_DIR$/User 3/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="149" column="51" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User 2/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="149" column="51" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/User 1/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        <state relative-caret-position="208">
+          <caret line="149" column="51" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
